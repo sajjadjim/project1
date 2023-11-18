@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Guide Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  
+
+
+  <style>
+    /* Your existing styles here */
+
+    /* Add CSS for the dropdown */
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: grey; /* Change the box color to blue */
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 8px 16px; /* Reduce padding to fit text in the box */
+      font-size: 14px; /* Change text size */
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html">
+        <img src="images/de.png" width="200" height="200">
+      </a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="rangpur.html"></a>
+            <!-- Hoverable Dropdown for "Divisions" -->
+            <div class="dropdown">
+              <div class="dropbtn"> <a href="">Divisions</a> </div>
+              <div class="dropdown-content">
+                <!-- Dhaka Division -->
+                <div class="division-dropdown">
+                  <a href="dhaka.html">Dhaka</a>
+                  <!-- Add more districts for Dhaka division if needed -->
+                </div>
+                <!-- Chittagong Division -->
+                <div class="division-dropdown">
+                  <a href="chittagong.html">Chittagong</a>
+                  <!-- Add more districts for Chittagong division if needed -->
+                </div>
+                <!-- Rajshahi Division -->
+                <div class="division-dropdown">
+                  <a href="rajshahi.html">Rajshahi</a>
+                  <!-- Add more districts for Rajshahi division if needed -->
+                </div>
+                <!-- Khulna Division -->
+                <div class="division-dropdown">
+                  <a href="khulna.html">Khulna</a>
+                  <!-- Add more districts for Khulna division if needed -->
+                </div>
+                <!-- Barishal Division -->
+                <div class="division-dropdown">
+                  <a href="barishal.html">Barishal</a>
+                  <!-- Add more districts for Barishal division if needed -->
+                </div>
+                <!-- Sylhet Division -->
+                <div class="division-dropdown">
+                  <a href="index1.html">Sylhet</a>
+                  <!-- Add more districts for Sylhet division if needed -->
+                </div>
+                <!-- Rangpur Division -->
+                <div class="division-dropdown">
+                  <a href="rangpur.html">Rangpur</a>
+                  <!-- Add more districts for Rangpur division if needed -->
+                </div>
+                <!-- Mymensingh Division -->
+                <div class="division-dropdown">
+                  <a href="mymensingh.html">Mymensingh</a>
+                  <!-- Add more districts for Mymensingh division if needed -->
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="text-box">
+      <h1>Travel Bangladesh</h1>
+      <p>Welcome to BD tour website. The biggest tour place suggestion guide website in Bangladesh. Here you will get suggestions for visiting all the beautiful places in Bangladesh. Along with where and how to go, its real-time location can also be found. One can get an idea about all kinds of things about that place before going to any place while sitting at home.</p>
+      <a href="" class="hero-btn">Visit Here to Know More</a>
+    </div>
+  </section>
+
+</body>
+</html>
